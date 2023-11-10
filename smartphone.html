@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .restricted-area {
+            width: 375px; /* ビューポートの幅に合わせる */
+            height: 675px; /* ビューポートの高さに合わせる */
+            overflow: hidden; /* コンテンツが表示領域を超える場合に非表示にする */
+            background-color: lightgray; /* 表示領域の背景色を設定 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            width: 80%; /* 表示領域の80%にコンテンツを表示 */
+            text-align: center;
+            border: 1px solid #000;
+            padding: 20px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="restricted-area">
+        <div class="content">
+            <h1>Smartphone size</h1>
+            <p>This content is showed on smartphone size</p>
+        </div>
+    </div>
+</body>
+</html>
